@@ -44,3 +44,10 @@ py -m venv .venv
 pip install -r requirements.txt
 python app.py --rebuild   # builds database from your notes/
 python app.py             # start chatting
+
+
+echo "# GPG test" >> test.txt
+git add test.txt
+git commit -S -m "Eriski: GPG verified test commit"
+git push
+
