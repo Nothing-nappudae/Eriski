@@ -1,0 +1,159 @@
+# ⚡ Chapter: Electric Charges and Fields
+
+## 1. Electric Charge
+Definition: Property of matter due to which it experiences an electric force in an electric field.
+Types of Charges:
+- Positive charge → deficiency of electrons
+- Negative charge → excess of electrons
+Unit: Coulomb (C)
+1 C = 6.25 × 10¹⁸ electrons
+
+### Properties of Electric Charge
+1. Additivity: Total charge is the algebraic sum of individual charges.
+2. Conservation: Total charge of an isolated system remains constant.
+3. Quantization: Charge exists in integral multiples of elementary charge.
+q = n × e, where e = 1.6 × 10⁻¹⁹ C and n is an integer.
+
+---
+
+## 2. Coulomb’s Law
+It gives the electrostatic force between two stationary point charges.
+F = (1 / 4πε₀) × (q₁q₂ / r²)
+where,
+F = electrostatic force,
+q₁, q₂ = charges,
+r = distance between charges,
+ε₀ = permittivity of free space = 8.854 × 10⁻¹² C²/N·m²
+In a medium of permittivity ε:
+F = (1 / 4πε) × (q₁q₂ / r²)
+Nature:
+- Attractive for opposite charges
+- Repulsive for like charges
+
+---
+
+## 3. Vector Form of Coulomb’s Law
+→F₁₂ = (1 / 4πε₀) × (q₁q₂ / r³) →r₂₁
+where →r₂₁ is the position vector of charge 2 with respect to charge 1.
+
+---
+
+## 4. Principle of Superposition
+Net electric force on any charge is the vector sum of forces due to all other charges.
+→F = Σ →Fᵢ
+
+---
+
+## 5. Electric Field
+Definition: Region around a charge where another charge experiences a force.
+Electric Field Intensity (E):
+→E = →F / q₀
+where q₀ is a small positive test charge.
+Unit: N/C or V/m
+For a Point Charge:
+→E = (1 / 4πε₀) × (q / r²) →r̂
+
+---
+
+## 6. Electric Field Lines
+Definition: Imaginary lines that represent the direction of the electric field.
+Properties:
+1. Originate from positive charge and terminate on negative charge.
+2. Never intersect.
+3. Tangent at any point gives the field direction.
+4. Density of lines ∝ magnitude of the field.
+5. Lines are perpendicular to the surface of a conductor.
+
+---
+
+## 7. Electric Field due to a System of Charges
+Using the superposition principle:
+→E = Σ (1 / 4πε₀) × (qᵢ / rᵢ²) →r̂ᵢ
+
+---
+
+## 8. Electric Dipole
+Definition: Two equal and opposite charges separated by a small distance.
+Dipole moment (→p) = q × 2l → (from - to +)
+Unit: C·m (Vector quantity)
+
+### Electric Field due to a Dipole
+At axial point:
+E = (1 / 4πε₀) × (2p / r³)
+At equatorial point:
+E = (1 / 4πε₀) × (p / r³)
+
+### Torque on a Dipole in Uniform Electric Field:
+τ = pE sinθ
+
+---
+
+## 9. Electric Flux (Φ)
+Definition: The total number of electric field lines passing through a surface.
+Φ = →E · →A = EA cosθ
+Unit: N·m²/C
+
+---
+
+## 10. Gauss’s Law
+Statement: The total electric flux through a closed surface is equal to 1/ε₀ times the total charge enclosed by the surface.
+Φ = ∮ →E · →dA = q_enclosed / ε₀
+
+### Applications:
+1. Electric field due to an infinite line charge:
+   E = λ / (2πε₀r)
+2. Electric field due to an infinite plane sheet:
+   E = σ / (2ε₀)
+3. Electric field due to a uniformly charged sphere:
+   - Outside (r > R): E = (1 / 4πε₀) × (Q / r²)
+   - On Surface (r = R): E = (1 / 4πε₀) × (Q / R²)
+   - Inside (r < R): E = (1 / 4πε₀) × (Q × r / R³)
+
+---
+
+## 11. Conductors and Insulators
+Conductors: Materials that allow charge flow (metals)
+Insulators: Materials that resist charge flow (rubber, glass)
+
+Properties of Conductors:
+1. Electric field inside conductor = 0
+2. Charge resides on surface only
+3. Surface is an equipotential surface
+4. Normal component of →E just outside = σ / ε₀
+
+---
+
+## 12. Electrostatic Shielding
+Phenomenon where the electric field inside a conductor cavity is zero, even if an external field is present.
+Used to protect sensitive instruments from external electric fields.
+
+---
+
+## 13. Key Constants
+ε₀ = 8.854 × 10⁻¹² C²/N·m²
+k = 1 / (4πε₀) = 9 × 10⁹ N·m²/C²
+e = 1.6 × 10⁻¹⁹ C
+
+---
+
+## 14. Important Formulas Summary
+| Quantity | Symbol | Formula | Unit |
+|-----------|---------|----------|------|
+| Electric Force | F | (1 / 4πε₀)(q₁q₂ / r²) | N |
+| Electric Field | E | F / q | N/C |
+| Dipole Moment | p | q × 2l | C·m |
+| Electric Flux | Φ | E·A | N·m²/C |
+| Torque on Dipole | τ | pE sinθ | N·m |
+
+---
+
+## 15. Conceptual Notes
+- Electric field is vector, charge is scalar.
+- Electric lines never form closed loops (start +, end –).
+- Inside a conductor, E = 0, potential = constant.
+- For spherical symmetry, use Gauss’s law.
+- Dipole field ∝ 1/r³, monopole field ∝ 1/r².
+
+---
+
+# ✅ End of Chapter: Electric Charges and Fields
