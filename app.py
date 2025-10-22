@@ -215,7 +215,7 @@ def answer(query, llm_model, embed_model, k=5):
     return r["message"]["content"], ctx
 
 # -------------------- UI --------------------
-st.title("⚡ Eriski — Fast Physics RAG")
+st.title(" Eriski — Fast Physics RAG")
 st.caption("Offline AI assistant that reads your physics notes, PDFs, and images (OCR).")
 
 with st.sidebar:
