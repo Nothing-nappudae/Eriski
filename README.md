@@ -1,53 +1,53 @@
-# 🧠 Eriski — My Physics AI Assistant
+# Eriski — Local Physics RAG Assistant
 
-Eriski started as a random midnight idea —  
-I just wanted an AI that could actually *read my own physics notes* instead of throwing random textbook answers at me.  
+**Eriski** is a privacy-first, offline AI assistant that reads my physics notes (PDFs, text, and even handwritten images!) and answers conceptual or derivation-based questions using locally-hosted LLMs.
 
-So I built one.
-
-Eriski is a **local Retrieval-Augmented Generation (RAG)** bot that reads my notes, indexes them, and answers my physics questions directly from what I’ve studied.  
-No cloud, no external API — just me, my PC, and my messy notes.
+Built for students who want an AI that actually understands _their own_ notes — no cloud, no data leaks.
 
 ---
 
-# ⚙️ What It Does
-- Reads `.txt`, `.md`, and `.pdf` notes from a `notes/` folder  
-- Breaks them into small chunks and stores them in a local database  
-- Uses **Ollama (Llama 3.1)** + **LangChain** + **ChromaDB**  
-- Lets me chat with my own notes through the terminal  
-- Works 100% offline 🧾  
+## Core Features
+
+- **Local RAG (Retrieval-Augmented Generation)** — powered by [Ollama](https://ollama.ai) models.
+- **Private Vector Database** — stores note embeddings using [ChromaDB](https://www.trychroma.com).
+- **Image-to-Text (OCR)** — extracts text from handwritten or printed notes via Tesseract.
+- **Multi-format Support** — `.txt`, `.md`, `.pdf`, `.png`, `.jpg`, `.jpeg`, `.webp`.
+- **Step-by-Step Physics Derivations** — concise explanations with citations from your notes.
+- **Chat History Memory** — maintains your conversation across sessions.
+- **Dark / Light Mode UI** — sleek and minimal Streamlit interface.
+- **Fast Mode Toggle** — uses smaller, faster embeddings (MXBAI) for quick indexing.
+- **100% Offline** — nothing ever leaves your machine.
 
 ---
 
-#  Why I Made It:
-I was tired of flipping through old notebooks before every physics test.  
-I wanted something that understood my explanations, my way of writing, and my confusion points.  
-Eriski became that — a little assistant that speaks *my version* of physics.
+## 🛠 Tech Stack
+
+| Component  | Tool                                                        |
+| ---------- | ----------------------------------------------------------- |
+| Interface  | [Streamlit](https://streamlit.io)                           |
+| Vector DB  | [ChromaDB](https://www.trychroma.com)                       |
+| Embeddings | `nomic-embed-text` / `mxbai-embed-large`                    |
+| LLM        | `llama3.1:8b` via [Ollama](https://ollama.ai)               |
+| OCR        | [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) |
+| Language   | Python 3.11+                                                |
 
 ---
 
-🛠️ Tech Stack:
-- **Python**
-- **Ollama** for local LLMs (Llama 3.1)
-- **LangChain** for RAG pipeline
-- **ChromaDB** for vector search
-- **FAISS embeddings** via `nomic-embed-text`
+## 🧪 How It Works
+
+1. Upload your notes (PDF / text / image).
+2. Eriski extracts text, chunks it, and builds a local embedding index.
+3. Ask any physics question — it retrieves relevant notes and cites sources inline.
+4. You can verify every derivation with references from your own material.
 
 ---
 
-###  How to Run
+## ⚙️ Installation
+
 ```bash
-git clone https://github.com/<yourusername>/eriski.git
-cd eriski
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
+git clone https://github.com/Nothing-nappudae/physics-rag
+cd physics-rag
+python -m venv .venv
+.\.venv\Scripts\activate
 pip install -r requirements.txt
-python app.py --rebuild   # builds database from your notes/
-python app.py             # start chatting
-
-
-echo "# GPG test" >> test.txt
-git add test.txt
-git commit -S -m "Eriski: GPG verified test commit"
-git push
-
+```
